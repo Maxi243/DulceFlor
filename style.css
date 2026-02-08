@@ -1,0 +1,177 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+  }
+  
+  body {
+    font-family: 'Inter', sans-serif;
+    background: #f6f4f2;
+    color: #1f1f1f;
+  }
+
+  /* HEADER */
+  .top {
+    max-width: 1200px;
+    margin: auto;
+    padding: 1.2rem 1rem;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: darksalmon;
+  }
+  
+  .logo {
+    font-family: 'Dancing Script', cursive;
+	  font-size: 4.8rem;
+	  padding: 10px;
+	  letter-spacing: 1.5px;}
+  
+  .logo span {
+    font-family: 'Dancing Script', cursive;
+	  font-size: 4.8rem;
+	  padding: 10px;
+	  letter-spacing: 1.5px;
+  }
+  
+  .logo em {
+    font-family: 'Dancing Script', cursive;
+    font-style: normal;
+    font-weight: 600;
+    margin-left: 4px;
+    
+  }
+  
+  
+  .top nav a {
+    margin-left: 1.5rem;
+    text-decoration: none;
+    color: #1f1f1f;
+    font-weight: 400;
+  }
+  
+   /*PORTADA */
+  .portada {
+    max-width: 1200px;
+    margin: 3rem auto;
+    padding: 0 1rem;
+    display: grid;
+    grid-template-columns: 1.2fr 1fr;
+    gap: 3rem;
+    align-items: center;
+  }
+  
+  .portada h1 {
+    font-family: 'Playfair Display', serif;
+    font-size: 3.2rem;
+    line-height: 1.1;
+  }
+  
+  .portada p {
+    margin: 1.5rem 0;
+    font-size: 1.05rem;
+    color: #555;
+  }
+  
+  .portada img {
+    width: 100%;
+    border-radius: 12px;
+  }
+  
+  /* BOTONES */
+  .btn {
+    display: inline-block;
+    padding: 0.7rem 1.6rem;
+    border-radius: 30px;
+    background: #c27c63;
+    color: #fff;
+    text-decoration: none;
+    font-size: 0.95rem;
+  }
+  
+  .btn.oscuro {
+    background: #1f1f1f;
+  }
+  
+  /* DESTACADO */
+  .destacado {
+    max-width: 1200px;
+    margin: 5rem auto;
+    padding: 0 1rem;
+  }
+  
+  .destacado h2 {
+    font-family: 'Playfair Display', serif;
+    font-size: 2.2rem;
+    margin-bottom: 2.5rem;
+  }
+  
+  .cards {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(260px, 1fr));
+    gap: 2rem;
+  }
+  
+  .cards article {
+    background: #fff;
+    border-radius: 14px;
+    overflow: hidden;
+  }
+  
+  .cards img {
+    width: 100%;
+    height: 300px;
+    object-fit: cover;
+  }
+  
+  .cards h3 {
+    padding: 1rem;
+    font-size: 1.1rem;
+  }
+  
+  /* PEDIDO */
+  .pedido {
+    background-color: darksalmon;
+    text-align: center;
+    padding: 4rem 1rem;
+  }
+  
+  .pedido h2 {
+    font-family: 'Playfair Display', serif;
+    font-size: 2.2rem;
+  }
+  
+  .pedido p {
+    margin: 1rem 0 1.8rem;
+    color: #555;
+  }
+  
+  /* FOOTER */
+  footer {
+    text-align: center;
+    padding: 1.5rem;
+    font-size: 0.85rem;
+    color: #777;
+  }
+  
+  /* MOBILE */
+  @media (max-width: 768px) {
+    .portada {
+      grid-template-columns: 1fr;
+      text-align: center;
+    }
+  
+    .portada h1 {
+      font-size: 2.4rem;
+    }
+  }
+  
+  /*whatsapp*/
+  .whatsapp-btn img {
+    width: 40px;
+    transition: transform 0.3s ease;
+  }
+  
+  .whatsapp-btn:hover img {
+    transform: scale(1.1);
+  }
