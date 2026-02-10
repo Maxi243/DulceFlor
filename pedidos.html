@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Dulce-Flor</title>
+
+  <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;600&family=Inter:wght@300;400;500&display=swap" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css2?family=Dancing+Script&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+    <!-- HEADER SIMPLE -->
+    <header class="top">
+      <h1 class="logo">
+        <span>Dulce</span><em>Flor</em>
+        <img src="img/ChatGPT Image 10 feb 2026, 18_46_39.png" alt="Logo Dulce Flor">
+      </h1>
+      <nav>
+        <a href="index.html" class="activo">Inicio</a>
+        <a href="productos.html" class="activo">Productos</a>
+        <a href="#" class="activo">Pedidos</a>
+      </nav>
+    </header>
+  
+    <!-- CONTENEDOR CENTRADO -->
+    <main class="pedido-container">
+      <div class="pedido-box">
+        <h1>Dulce Flor</h1>
+        <p>Escribí tu pedido</p>
+  
+        <textarea id="mensaje"
+          placeholder="Ej: Quiero una tarta de frutillas para 10 personas, para el sábado...">
+        </textarea>
+  
+        <button onclick="enviarWhatsApp()">Enviar pedido por WhatsApp</button>
+      </div>
+    </main>
+  
+  </body>
+  
+
+  <script>
+    function enviarWhatsApp() {
+      const mensaje = document.getElementById("mensaje").value;
+      const telefono = "5491127477898"; // 👈 tu número con código país
+
+      const url = "https://wa.me/" + telefono + "?text=" + encodeURIComponent(mensaje);
+      window.open(url, "_blank");
+    }
+  </script>
+
+<section class="pedido">
+    <h2>Pedidos a medida</h2>
+    <p>Contanos tu idea y la hacemos realidad</p>
+    <a href="pedidos.html" class="btn oscuro">Pedir por WhatsApp</a>
+  </section>
+
+  <footer>
+    <div class="redes-sociales">
+      <h3><b>SEGUINOS EN NUESTRAS REDES </b></h3>
+      <a href="https://www.instagram.com" target="_blank">📸 INSTAGRAM</a>
+      <a href="https://www.facebook.com" target="_blank">📘 FACEBOOK</a>
+      <a href="https://www.twitter.com" target="_blank">🐦 X (TWITTER)</a>
+      <h5 class="copy">&copy; 2026 DULCE FLOR. Todos los derechos reservados.</h5>
+  </div>
+    
+  </footer>
+
+</body>
+</html>
+
