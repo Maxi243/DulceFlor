@@ -70,7 +70,6 @@
     text-decoration: none;
     color: #1f1f1f;
     font-weight: 400;
-  
     border: 2px solid transparent;   /* borde invisible */
     border-radius: 25px;
   
@@ -111,6 +110,10 @@
     color: #555;
   }
   
+  .texto a{
+    margin-top: 15px;
+  }
+
   .portada img {
     width: 100%;
     border-radius: 12px;
@@ -216,6 +219,7 @@
     color: #777;
     text-decoration: none;
     margin: 0 15px;
+    padding: 15px 0;
     font-size: 18px;
     transition: color 0.3s;
     display: inline-block;
