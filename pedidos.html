@@ -28,7 +28,7 @@
     <main class="pedido-container">
       <div class="pedido-box">
         <h1>Dulce Flor</h1>
-        <p>Escribí tu pedido</p>
+        <p>Hace tu pedido</p>
   
         <textarea id="mensaje"
           placeholder="Ej: Quiero una tarta de frutillas para 10 personas, para el sábado...">
@@ -40,16 +40,6 @@
   
   </body>
   
-
-  <script>
-    function enviarWhatsApp() {
-      const mensaje = document.getElementById("mensaje").value;
-      const telefono = "5491127477898"; // 👈 tu número con código país
-
-      const url = "https://wa.me/" + telefono + "?text=" + encodeURIComponent(mensaje);
-      window.open(url, "_blank");
-    }
-  </script>
 
 <section class="pedido">
     <h2>Pedidos a medida</h2>
@@ -68,6 +58,7 @@
     
   </footer>
 
+  <script src="script.js"></script>
 </body>
 </html>
 
